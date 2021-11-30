@@ -7,7 +7,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        applicationId 'fr.mbds.tdaumas.movieapp'
+        applicationId 'fr.mbds.dtla.movieapp'
         minSdk 24
         targetSdk 31
         versionCode 1

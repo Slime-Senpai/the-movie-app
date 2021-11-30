@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="fr.mbds.tdaumas.movieapp.ui.home.HomeFragment"
+        android:name="fr.mbds.dtla.movieapp.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_home_second"
-        android:name="fr.mbds.tdaumas.movieapp.ui.home.HomeSecondFragment"
+        android:name="fr.mbds.dtla.movieapp.ui.home.HomeSecondFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
@@ -31,13 +31,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="fr.mbds.tdaumas.movieapp.ui.dashboard.DashboardFragment"
+        android:name="fr.mbds.dtla.movieapp.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="fr.mbds.tdaumas.movieapp.ui.notifications.NotificationsFragment"
+        android:name="fr.mbds.dtla.movieapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
