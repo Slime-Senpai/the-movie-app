@@ -223,7 +223,7 @@ suspend fun getCategories(): Result<List<Category>> {
     <data>
         <variable
             name="item"
-            type="com.gmail.eamosse.idbdata.data.Category" />
+            type="fr.mbds.tdaumas.idbdata.data.Category" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
