@@ -1,4 +1,4 @@
-package fr.mbds.dtla.movieapp.ui.home
+package fr.mbds.dtla.movieapp.ui.hometv
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -11,7 +11,7 @@ import fr.mbds.dtla.idbdata.utils.Result
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HomeViewModel(private val repository: MovieRepository) : ViewModel() {
+class HomeTVViewModel(private val repository: MovieRepository) : ViewModel() {
 
     private val _token: MutableLiveData<Token> = MutableLiveData()
     val token: LiveData<Token>
@@ -40,7 +40,7 @@ class HomeViewModel(private val repository: MovieRepository) : ViewModel() {
 
     fun getCategories(language: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            when (val result = repository.getCategories(language)) {
+            when (val result = repository.getTVCategories(language)) {
                 is Result.Succes -> {
                     _categories.postValue(result.data)
                 }

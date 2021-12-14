@@ -1,4 +1,5 @@
-import fr.mbds.dtla.idbdata.utils.Result
+package fr.mbds.dtla.idbdata.utils
+
 import retrofit2.Response
 import java.io.IOException
 

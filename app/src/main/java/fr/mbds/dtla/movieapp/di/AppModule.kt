@@ -2,6 +2,11 @@ package fr.mbds.dtla.movieapp.di
 
 import android.content.Context
 import fr.mbds.dtla.movieapp.ui.home.HomeViewModel
+import fr.mbds.dtla.movieapp.ui.hometv.HomeTVViewModel
+import fr.mbds.dtla.movieapp.ui.moviedetail.MovieDetailViewModel
+import fr.mbds.dtla.movieapp.ui.movies.MovieViewModel
+import fr.mbds.dtla.movieapp.ui.tv.TVViewModel
+import fr.mbds.dtla.movieapp.ui.tvdetail.TVShowDetailViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
@@ -22,5 +27,25 @@ val appModule = module {
 
     viewModel {
         HomeViewModel(repository = get())
+    }
+
+    viewModel {
+        MovieViewModel(repository = get())
+    }
+
+    viewModel {
+        MovieDetailViewModel(repository = get())
+    }
+
+    viewModel {
+        HomeTVViewModel(repository = get())
+    }
+
+    viewModel {
+        TVViewModel(repository = get())
+    }
+
+    viewModel {
+        TVShowDetailViewModel(repository = get())
     }
 }

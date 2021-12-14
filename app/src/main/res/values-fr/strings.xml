@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BestFlix</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précedant</string>
+    <string name="title_home">Film</string>
+    <string name="title_tv">Show TV</string>
+    <string name="title_about">A Propos</string>
+    <string name="movie_list">Liste de Film</string>
+    <string name="title_movie_detail">Détail du Film</string>
+    <string name="movie_date">Date de Sortie</string>
+    <string name="language">fr-FR</string>
+    <string name="votes">Votes</string>
+    <string name="description">Description</string>
+    <string name="error">Erreur, Essayez plus tard !</string>
+    <string name="title_movies">Films</string>
+    <string name="tvshow_date">Date de Sortie</string>
+    <string name="title_tvshow_detail">Détail du Show TV</string>
+    <string name="title_tvshows">Shows TV</string>
+    <string name="text_about"><![CDATA[Application BestFlix faites par: DAUMAS Timmy & LACOMME Antonin\n\n\n
+        Cette app vous permet de vous renseigner sur des films et des shows tv et voir leurs détails et est basé sur developers.themoviedb.org\n\n\n
+        Le premier button vous permet de voir les catégories de films, le deuxième les catégories de shows tv et le dernier est celui pour cette page.\n\n\n
+        En cliquant sur les catégories, vous pouvez voir les films / shows tv dans cette catégorie et ensuite en cliquant sur un film / show tv, vous pouvez voir les détails de ce film / show tv.]]>
+    </string>
+</resources>

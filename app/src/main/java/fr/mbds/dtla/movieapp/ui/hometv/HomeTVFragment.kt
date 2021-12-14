@@ -1,4 +1,4 @@
-package fr.mbds.dtla.movieapp.ui.home
+package fr.mbds.dtla.movieapp.ui.hometv
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import fr.mbds.dtla.movieapp.R
 import fr.mbds.dtla.movieapp.databinding.FragmentHomeBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class HomeFragment : Fragment() {
+class HomeTVFragment : Fragment() {
 
-    private val homeViewModel: HomeViewModel by viewModel()
+    private val homeViewModel: HomeTVViewModel by viewModel()
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
@@ -35,8 +35,8 @@ class HomeFragment : Fragment() {
             })
 
             categories.observe(viewLifecycleOwner, {
-                binding.categoryList.adapter = CategoryAdapter(it) { category ->
-                    val direction = HomeFragmentDirections.actionHomeFragmentToMovies(category.id.toString(), category.name)
+                binding.categoryList.adapter = CategoryTVAdapter(it) { category ->
+                    val direction = HomeTVFragmentDirections.actionHomeTVFragmentToTVShows(category.id.toString(), category.name)
                     findNavController().navigate(direction)
                 }
             })

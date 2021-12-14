@@ -1,15 +1,15 @@
-package fr.mbds.dtla.movieapp.ui.home
+package fr.mbds.dtla.movieapp.ui.hometv
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import fr.mbds.dtla.idbdata.data.Category
-import fr.mbds.dtla.movieapp.databinding.CategoryListItemBinding
+import fr.mbds.dtla.movieapp.databinding.CategoryTvListItemBinding
 
-class CategoryAdapter(private val items: List<Category>, private val onClick: (category: Category) -> Unit) :
-    RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryTVAdapter(private val items: List<Category>, private val onClick: (category: Category) -> Unit) :
+    RecyclerView.Adapter<CategoryTVAdapter.ViewHolder>() {
 
-    inner class ViewHolder(private val binding: CategoryListItemBinding) :
+    inner class ViewHolder(private val binding: CategoryTvListItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Category) {
             binding.item = item
@@ -21,7 +21,7 @@ class CategoryAdapter(private val items: List<Category>, private val onClick: (c
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(CategoryListItemBinding.inflate(inflater, parent, false))
+        return ViewHolder(CategoryTvListItemBinding.inflate(inflater, parent, false))
     }
 
     override fun getItemCount(): Int = items.size

@@ -12,32 +12,83 @@
         tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/navigation_home_second" />
+            android:id="@+id/action_HomeFragment_to_Movies"
+            app:destination="@id/navigation_movie_list" />
     </fragment>
     <fragment
-        android:id="@+id/navigation_home_second"
-        android:name="fr.mbds.dtla.movieapp.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
+        android:id="@+id/navigation_movie_list"
+        android:name="fr.mbds.dtla.movieapp.ui.movies.MovieFragment"
+        android:label="@string/movie_list"
+        tools:layout="@layout/fragment_movies">
+
         <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/action_Movies_to_MovieDetail"
+            app:destination="@+id/navigation_movie_detail" />
 
         <argument
-            android:name="myArg"
+            android:name="categoryId"
+            app:argType="string" />
+
+        <argument
+            android:name="categoryName"
             app:argType="string" />
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="fr.mbds.dtla.movieapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_movie_detail"
+        android:name="fr.mbds.dtla.movieapp.ui.moviedetail.MovieDetailFragment"
+        android:label="@string/title_movie_detail"
+        tools:layout="@layout/fragment_movie_detail">
+
+        <argument
+            android:name="movieId"
+            app:argType="string" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="fr.mbds.dtla.movieapp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_tv"
+        android:name="fr.mbds.dtla.movieapp.ui.hometv.HomeTVFragment"
+        android:label="@string/title_tv"
+        tools:layout="@layout/fragment_home_tv">
+
+        <action
+            android:id="@+id/action_HomeTVFragment_to_TVShows"
+            app:destination="@id/navigation_tvshows" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tvshows"
+        android:name="fr.mbds.dtla.movieapp.ui.tv.TVFragment"
+        android:label="@string/title_tv"
+        tools:layout="@layout/fragment_tvshows">
+
+        <action
+            android:id="@+id/action_TVShows_to_TVShowDetail"
+            app:destination="@+id/navigation_tvshow_detail" />
+
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tvshow_detail"
+        android:name="fr.mbds.dtla.movieapp.ui.tvdetail.TVShowDetailFragment"
+        android:label="@string/title_tvshow_detail"
+        tools:layout="@layout/fragment_tvshow_detail">
+
+        <argument
+            android:name="tvshowId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="fr.mbds.dtla.movieapp.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/fragment_about" />
 </navigation>
