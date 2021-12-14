@@ -35,6 +35,11 @@ basé sur la base de données de themoviedb.org.
 ### A Propos
 ![Photo de la vue A Propos](images/about.png)
 
+### Vidéo
+Lien de la vidéo:
+
+https://youtu.be/rakQsXUn6Bg
+
 ## Rendu
 - Date limite : 14 Décembre 2021 (avant minuit)
 - Modalités de rendu : Remplir le drive qui vous sera envoyé par mail
